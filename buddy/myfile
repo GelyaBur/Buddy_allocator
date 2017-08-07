@@ -1,0 +1,11 @@
+def power(b, n):
+    p = 1
+    while n != 0:
+        if n % 2 == 1:
+            p = p * b
+            n = n - 1
+        b = b * b
+        n = n / 2
+    return p
+
+print(power(4, 8))
